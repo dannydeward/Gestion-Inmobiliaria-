@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_informes</class>
+ <widget class="QWidget" name="Form_informes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>189</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="background_frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>30</y>
+     <width>641</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_Servicios_Ade">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Servicios adeudados</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Reparaciones_Ef">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Reparaciones efectuadas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Viaticos">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Viaticos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_CajaChica">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Caja Chica</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_encabezado">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>641</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(170, 0, 0)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Informes</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_CloseP">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/close-window.png</normaloff>../assets/icon/close-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_MaxiP">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/maximize-window.png</normaloff>../assets/icon/maximize-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_MiniP">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/minimize-window.png</normaloff>../assets/icon/minimize-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_restaure">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/restore-window.png</normaloff>../assets/icon/restore-window.png</iconset>
+     </property>
+    </widget>
+    <zorder>toolButton_restaure</zorder>
+    <zorder>toolButton_CloseP</zorder>
+    <zorder>toolButton_MaxiP</zorder>
+    <zorder>toolButton_MiniP</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

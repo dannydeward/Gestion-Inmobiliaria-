@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_mainWindow</class>
+ <widget class="QWidget" name="Form_mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="Principal_panel_widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>639</width>
+        <height>489</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">backgorund:white;</string>
+      </property>
+      <widget class="QFrame" name="frame_encabezado">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>641</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>641</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(170, 0, 0)</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>161</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+        <property name="text">
+         <string>Administracion de Alquileres </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>30</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>509</x>
+          <y>10</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QToolButton" name="toolButton_CloseP">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>0</y>
+           <width>22</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icon/close-window.png</normaloff>../assets/icon/close-window.png</iconset>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_MaxiP">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>0</y>
+           <width>22</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icon/maximize-window.png</normaloff>../assets/icon/maximize-window.png</iconset>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_MiniP">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>22</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icon/minimize-window.png</normaloff>../assets/icon/minimize-window.png</iconset>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButton_restaure">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>0</y>
+           <width>22</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icon/restore-window.png</normaloff>../assets/icon/restore-window.png</iconset>
+         </property>
+        </widget>
+        <zorder>toolButton_restaure</zorder>
+        <zorder>toolButton_CloseP</zorder>
+        <zorder>toolButton_MaxiP</zorder>
+        <zorder>toolButton_MiniP</zorder>
+       </widget>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Tecni">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>60</y>
+         <width>171</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>127</red>
+             <green>127</green>
+             <blue>127</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>170</green>
+             <blue>170</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>240</red>
+             <green>240</green>
+             <blue>240</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>227</red>
+             <green>227</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>240</red>
+             <green>240</green>
+             <blue>240</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>105</red>
+             <green>105</green>
+             <blue>105</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>245</red>
+             <green>245</green>
+             <blue>245</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>127</red>
+             <green>127</green>
+             <blue>127</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>170</green>
+             <blue>170</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>245</red>
+             <green>245</green>
+             <blue>245</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/apoyo-tecnico.png</normaloff>../../../Downloads/apoyo-tecnico.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Infor">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>60</y>
+         <width>171</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/reporte.png</normaloff>../../../Downloads/reporte.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_InqPro">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>210</y>
+         <width>171</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/trabajo-en-equipo.png</normaloff>../../../Downloads/trabajo-en-equipo.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Ser">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>210</y>
+         <width>171</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/factura.png</normaloff>../../../Downloads/factura.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Prop">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>440</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Propiedades</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Inf">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>170</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Informes</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_InqPro">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>310</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Inquilinos/propietarios</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Ser">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>310</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Servicios</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Pro">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>340</y>
+         <width>171</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/casa.png</normaloff>../../../Downloads/casa.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tec">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>170</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tecnicos</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="background_frame">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>30</y>
+         <width>641</width>
+         <height>441</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>641</width>
+         <height>441</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <zorder>background_frame</zorder>
+      <zorder>frame_encabezado</zorder>
+      <zorder>toolButton_Tecni</zorder>
+      <zorder>toolButton_Infor</zorder>
+      <zorder>toolButton_InqPro</zorder>
+      <zorder>toolButton_Ser</zorder>
+      <zorder>label_Prop</zorder>
+      <zorder>label_Inf</zorder>
+      <zorder>label_InqPro</zorder>
+      <zorder>label_Ser</zorder>
+      <zorder>toolButton_Pro</zorder>
+      <zorder>label_Tec</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

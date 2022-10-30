@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Tecnicos</class>
+ <widget class="QWidget" name="Form_Tecnicos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>641</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QToolButton" name="toolButton_Nuevo_Tecnico">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+       </property>
+       <property name="text">
+        <string>Nuevo</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Edit_tecni">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+       </property>
+       <property name="text">
+        <string>Editar</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Buscar_Tecnicos">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+       </property>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_eliminar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>180</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(170,0,0);</string>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>16</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_tecnicos">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>531</width>
+         <height>231</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecnico_Nombre">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecnico_Apellido">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apellido</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecnico_telf">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Telefono</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecnico_4">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Especialidad</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_Plomeria">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>130</y>
+         <width>76</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Plomeria</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_electri">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>76</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>electricidad</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_Gas">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>170</y>
+         <width>76</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gas</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_Albail">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>130</y>
+         <width>76</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Albanil</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_Empape">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>150</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Empapelador</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_AireAcon">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>170</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Aire Acondicionado</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Nombre_Tecn">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Apellido_tecn">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Telefono_Tecn">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>70</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecn_Horario">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>10</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Horario</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tecnico_6">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>230</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Tec_horarioM">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mañana</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_TecnHora_T">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>70</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tarde</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Horario_Maana">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>40</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Horario_Tarde">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>70</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Agrega_tecnicos">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>190</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_Guardar_tecnicos_">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>190</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Guardar</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame__Buscar_tecnico">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>531</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="toolButton">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>10</y>
+          <width>22</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgb(170, 0, 0)</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icon/search.png</normaloff>../assets/icon/search.png</iconset>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_Listatenicos">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>521</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame_Listatenicos</zorder>
+       <zorder>comboBox</zorder>
+       <zorder>toolButton</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_encabezado">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>641</width>
+     <height>31</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgb(170, 0, 0)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Tecnicos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>509</x>
+      <y>10</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_CloseP">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/close-window.png</normaloff>../assets/icon/close-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_MaxiP">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/maximize-window.png</normaloff>../assets/icon/maximize-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_MiniP">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/minimize-window.png</normaloff>../assets/icon/minimize-window.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_restaure">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/icon/restore-window.png</normaloff>../assets/icon/restore-window.png</iconset>
+     </property>
+    </widget>
+    <zorder>toolButton_restaure</zorder>
+    <zorder>toolButton_CloseP</zorder>
+    <zorder>toolButton_MaxiP</zorder>
+    <zorder>toolButton_MiniP</zorder>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="background_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
